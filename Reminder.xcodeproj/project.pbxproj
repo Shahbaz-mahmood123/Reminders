@@ -16,6 +16,10 @@
 		D5D045022946A2BE001583E5 /* OptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D045012946A2BE001583E5 /* OptionsModel.swift */; };
 		D5D045042946A301001583E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D045032946A301001583E5 /* HomeView.swift */; };
 		D5D045062946A30B001583E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D045052946A30B001583E5 /* MainView.swift */; };
+		D5D0450A29490839001583E5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450929490839001583E5 /* ContentViewModel.swift */; };
+		D5D0450C29490856001583E5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450B29490856001583E5 /* MainViewModel.swift */; };
+		D5D0450E29490870001583E5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450D29490870001583E5 /* HomeViewModel.swift */; };
+		D5D0451029490890001583E5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450F29490890001583E5 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		D5D045012946A2BE001583E5 /* OptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsModel.swift; sourceTree = "<group>"; };
 		D5D045032946A301001583E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D5D045052946A30B001583E5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D5D0450929490839001583E5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		D5D0450B29490856001583E5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D5D0450D29490870001583E5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D5D0450F29490890001583E5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 		D5D044F729468B61001583E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D5D0450929490839001583E5 /* ContentViewModel.swift */,
+				D5D0450B29490856001583E5 /* MainViewModel.swift */,
+				D5D0450D29490870001583E5 /* HomeViewModel.swift */,
+				D5D0450F29490890001583E5 /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,13 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D0450A29490839001583E5 /* ContentViewModel.swift in Sources */,
 				D5D044FA29468B75001583E5 /* LoginView.swift in Sources */,
 				D5D045062946A30B001583E5 /* MainView.swift in Sources */,
+				D5D0450E29490870001583E5 /* HomeViewModel.swift in Sources */,
 				D5D044FE2946905C001583E5 /* SettingsView.swift in Sources */,
 				D5D045022946A2BE001583E5 /* OptionsModel.swift in Sources */,
 				D5D045042946A301001583E5 /* HomeView.swift in Sources */,
 				D5D044EA29468B0A001583E5 /* ContentView.swift in Sources */,
+				D5D0451029490890001583E5 /* SettingsViewModel.swift in Sources */,
 				D5D044E829468B0A001583E5 /* ReminderApp.swift in Sources */,
+				D5D0450C29490856001583E5 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
