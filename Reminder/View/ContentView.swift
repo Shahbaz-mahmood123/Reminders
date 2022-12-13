@@ -19,7 +19,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
 
-            ListView(options: options)
+            ListView(currentScreen: $currentScreen, options: options)
             MainView(currentScreen: $currentScreen)
         }.frame(minWidth: 600, minHeight: 400)
 
@@ -27,6 +27,7 @@ struct ContentView: View {
 }
 
 struct ListView: View {
+    @Binding var currentScreen: Int
     let options: [Options]
     var body: some View {
         VStack{
@@ -41,7 +42,10 @@ struct ListView: View {
                 }.padding(9)
                     .onTapGesture {
                         if option.title == "Home" {
-                            
+                            currentScreen = 0
+                        }
+                        if option.title == "Settings" {
+                            currentScreen = 1
                         }
                     }
  
