@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var vm = HomeViewModel(webService: WebService())
+    
     var body: some View {
-        Text("Home View!")
+        ZStack{
+            Text(vm.apod!.explanation)
+        }.onAppear{
+            vm.fetchAPOD()
+        } 
     }
 }
 

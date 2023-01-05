@@ -20,6 +20,11 @@
 		D5D0450C29490856001583E5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450B29490856001583E5 /* MainViewModel.swift */; };
 		D5D0450E29490870001583E5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450D29490870001583E5 /* HomeViewModel.swift */; };
 		D5D0451029490890001583E5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0450F29490890001583E5 /* SettingsViewModel.swift */; };
+		D5D04513294922BA001583E5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D04512294922BA001583E5 /* ListView.swift */; };
+		D5D0451529492531001583E5 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0451429492531001583E5 /* WebService.swift */; };
+		D5D0451829492941001583E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5D0451729492941001583E5 /* Info.plist */; };
+		D5D0451A294931C1001583E5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D04519294931C1001583E5 /* NetworkService.swift */; };
+		D5D0451C294934C6001583E5 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0451B294934C6001583E5 /* APODModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,12 @@
 		D5D0450B29490856001583E5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		D5D0450D29490870001583E5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D5D0450F29490890001583E5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D5D04512294922BA001583E5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D5D0451429492531001583E5 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D5D04516294925FC001583E5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D5D0451729492941001583E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D04519294931C1001583E5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D5D0451B294934C6001583E5 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,8 @@
 		D5D044DB29468B0A001583E5 = {
 			isa = PBXGroup;
 			children = (
+				D5D0451729492941001583E5 /* Info.plist */,
+				D5D04516294925FC001583E5 /* Config.xcconfig */,
 				D5D044E629468B0A001583E5 /* Reminder */,
 				D5D044E529468B0A001583E5 /* Products */,
 			);
@@ -70,6 +83,7 @@
 		D5D044E629468B0A001583E5 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				D5D045112949226F001583E5 /* Services */,
 				D5D044F829468B66001583E5 /* Model */,
 				D5D044F729468B61001583E5 /* ViewModel */,
 				D5D044F629468B5A001583E5 /* View */,
@@ -97,6 +111,7 @@
 				D5D044FD2946905C001583E5 /* SettingsView.swift */,
 				D5D045032946A301001583E5 /* HomeView.swift */,
 				D5D045052946A30B001583E5 /* MainView.swift */,
+				D5D04512294922BA001583E5 /* ListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +131,18 @@
 			isa = PBXGroup;
 			children = (
 				D5D045012946A2BE001583E5 /* OptionsModel.swift */,
+				D5D0451B294934C6001583E5 /* APODModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D5D045112949226F001583E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0451429492531001583E5 /* WebService.swift */,
+				D5D04519294931C1001583E5 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +205,7 @@
 			files = (
 				D5D044EF29468B0B001583E5 /* Preview Assets.xcassets in Resources */,
 				D5D044EC29468B0B001583E5 /* Assets.xcassets in Resources */,
+				D5D0451829492941001583E5 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D0451529492531001583E5 /* WebService.swift in Sources */,
 				D5D0450A29490839001583E5 /* ContentViewModel.swift in Sources */,
 				D5D044FA29468B75001583E5 /* LoginView.swift in Sources */,
 				D5D045062946A30B001583E5 /* MainView.swift in Sources */,
@@ -197,7 +224,10 @@
 				D5D044FE2946905C001583E5 /* SettingsView.swift in Sources */,
 				D5D045022946A2BE001583E5 /* OptionsModel.swift in Sources */,
 				D5D045042946A301001583E5 /* HomeView.swift in Sources */,
+				D5D0451C294934C6001583E5 /* APODModel.swift in Sources */,
 				D5D044EA29468B0A001583E5 /* ContentView.swift in Sources */,
+				D5D0451A294931C1001583E5 /* NetworkService.swift in Sources */,
+				D5D04513294922BA001583E5 /* ListView.swift in Sources */,
 				D5D0451029490890001583E5 /* SettingsViewModel.swift in Sources */,
 				D5D044E829468B0A001583E5 /* ReminderApp.swift in Sources */,
 				D5D0450C29490856001583E5 /* MainViewModel.swift in Sources */,
